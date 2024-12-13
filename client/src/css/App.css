@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Open Sans, Gill Sans MT, Gill Sans, Corbel, Arial, sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.form-block {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.form-block div {
+  background-color: bisque;
+}

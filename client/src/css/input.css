@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Linearicons;
+    font-style: normal;
+    font-weight: 400;
+    src: url(./Linearicons.ttf) format("truetype")
+}
+
+.input-block {
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    font-family: Open Sans, Gill Sans MT, Gill Sans, Corbel, Arial, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
+}
+
+input[type='text'] {
+    outline-style: none;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px 0 10px;
+    /* padding: 0 10px 0 95px; */
+    font-family: Open Sans, Gill Sans MT, Gill Sans, Corbel, Arial, sans-serif;
+}
+input[type='text'].not-valid {
+    color:red;
+}
+input[type='text'].valid {
+    color:green;
+}
+
+/* .input-block:before {
+    color: #000;
+    content: "";
+    display: inline-block;
+    font-family: Linearicons;
+    font-size: 20px;
+    font-weight: 400;
+    left: 12px;
+    margin-top: 0;
+    position: absolute;
+    top: 10px;
+}
+.input-block:after {
+    color: #000;
+    content: "HTTPS";
+    left: 37px;
+    position: absolute;
+    top: 15px;
+} */

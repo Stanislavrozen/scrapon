@@ -1,0 +1,42 @@
+.select-box {
+    min-width: 350px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .select-box select {
+    appearance: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    line-height: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    outline-style: none;
+  }
+  
+  .select-box::before,
+  .select-box::after {
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .select-box::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+  }
+  
+  .select-box::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+  }

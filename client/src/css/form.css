@@ -1,0 +1,122 @@
+
+form>* {
+
+    margin-bottom: 20px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f2f3f4;
+    color: #000;
+    font-family: Open Sans, Gill Sans MT, Gill Sans, Corbel, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+section.wizard {
+    overflow: visible;
+    padding: 15px 0 0;
+}
+section {
+    width: 100%;
+    font-family: Open Sans, Gill Sans MT, Gill Sans, Corbel, Arial, sans-serif;
+}
+.container, section, section .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container, section .container {
+    /* max-width: 1170px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.card {
+    display: block;
+    margin: 0 auto 80px;
+    max-width: 500px;
+    background: #1c2035;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 20px;
+    width: 100%;
+}
+h5 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    font-family: Open Sans,Gill Sans MT,Gill Sans,Corbel,Arial,sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    font-weight: 700;
+    margin: 0 0 10px;
+    display: inherit;
+    font-size: 15px;
+}
+.card form {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.card form .input.submit button {
+    float: right;
+    position: relative;
+    right: unset;
+    top: unset;
+    width: 110px;
+}
+.card form .input.submit button {
+    background: #4d70d3;
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    height: 50px;
+    margin-right: 0;
+    padding: 11px 12px 12px;
+    position: relative;
+    width: 175px;
+}
+.button {
+    background-image: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.options-box {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+.select-box {
+    width:100
+}
+.html-check-box {
+    display: flex;
+    width: 0;
+    opacity: 0;
+    justify-content: center;
+    transition: width 1s, opacity 1s;
+    overflow: hidden;
+}
+.html-check-box.active {
+    width: 100%;
+    opacity: 1;
+}
+.html-check-box input {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
