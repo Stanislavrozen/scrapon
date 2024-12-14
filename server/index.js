@@ -12,13 +12,11 @@ server.get("/", async (req, res) => {
     res.setHeader("Content-Type", "application/json");
     res.setHeader("Access-Control-Allow-Origin", "*");
 
-    console.log(req.query);
     let result = "Так в чем вопрос?";
     
     const h = await scrape(req.query);
     
-    // console.log(h);
-    res.send()
+    res.send(h)
     res.end();
 
 }).listen(port, () => {

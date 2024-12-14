@@ -95,8 +95,8 @@ h5 {
     -moz-user-select: none;
     user-select: none;
 }
-.options-box {
-    /* width: 100%; */
+.question-box {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }

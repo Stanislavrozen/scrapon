@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import validator from 'validator';
 import './css/input.css';
 
-const Input = ({ url, onChange}) => {
+const Input = ({ url, placeholder, onChange}) => {
 
     const valid = (e) => {
 
@@ -20,10 +20,8 @@ const Input = ({ url, onChange}) => {
     }
 
     return (
-        <div className='input-block'>
-            <input type="text" placeholder="Адрес страницы" name="page" value={url}
+            <input type="text" placeholder={placeholder} name="page" value={url}
                 onChange={(e) => { valid(e) }} onBlur={(e) => valid(e)} />
-        </div>
     )
 }
 

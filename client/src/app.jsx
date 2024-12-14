@@ -11,14 +11,14 @@ function App() {
     { name: "Заголовок страницы", selector: "h1" },
   ];
 
-  const [scrap, setScrap] = useState();
+  const [scrap, setScrapped] = useState();
 
   const sendQuery = async (params) => {
 
     var result = await axios.get("http://192.168.1.100:5001", { params: { ...params } });
 
-    console.log(result.data)
-    setScrap(result.data);
+    console.log(result.data.map)
+    setScrapped(result.data);
   }
 
   return (

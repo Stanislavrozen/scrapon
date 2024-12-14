@@ -11,28 +11,28 @@ const Form = ({ opts, sendQuery }) => {
     // const [selector, setSelector] = useState("");
 
     const onFormChange = (changes) => {
-        console.log(changes);
         
         // changes.selector = (params.selector && changes.customSelector) ? changes.customSelector : changes
         
         setParams({ ...params, ...changes });
         
     }
-
+    
     const submit = () => {
-
+        
+        console.log(params);
         sendQuery(params);
     }
 
     return (
         <form name="index_submit_domain" onSubmit={(e) => e.preventDefault()} >
-            <div className='url-box'>
-                <Input value={params.url} onChange={onFormChange} />
+            <div className='question-box url-box'>
+                <Input placeholder="Адрес страницы" value={params.url} onChange={onFormChange} />
             </div>
-            <div className='options-box selector-box'>
+            <div className='question-box selector-box'>
                 <Dropdown opts={opts} value={params.selector} onChange={(v) => onFormChange({ selector: v })} />
             </div>
-            <div className='options-box custom-selector'>
+            <div className='question-box custom-selector'>
                 <input type='text' value={params.selector} onChange={(e) => onFormChange({ selector: e.target.value })} />
             </div>
             <Checkbox active={params.url && params.selector} onChange={(v) => onFormChange({ html: v })} />

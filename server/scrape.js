@@ -10,19 +10,16 @@ module.exports = async ({ url, selector, html }) => {
 
         const $ = cheerio.load(resp.data);
 
-        if (!selector) {
-            selector = "";
-        }
+        return $(selector).toArray().map((item, idx) => {
 
-        let ele = $(selector).toArray();
-        ele.forEach((i, e) => {
-
-            console.log("---------------------------------------------")
-            console.log(i, e)
+            console.log(html)
+            if (html == "true") {
+                return $.html(item).replace(/\s\s+/g, '');
+            }
+            else {
+                return $(item).text();
+            }
         })
-
-        return $(selector);
-        // return (html == "true") ? $.html(selector) : $(selector).text();
     }
 
     await axios.get(url).then((r) => {
